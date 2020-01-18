@@ -26,15 +26,16 @@ After filling your code, please use `make test_homework` to test.
 
 All data files will be generated at runtime, and you can use `make cleanup` to clean all test data.
 
+Please output URLs by lexicographical order and ensure that your result has the same format as test data so that you can pass all tests.
+
 Each test cases has **different data distribution** and you should take it into account.
 
 ## Requirements and rating principles
 
 * (40%) Performs better than `urltop10_example`.
 * (20%) Pass all test cases.
-* (20%) Profile your program with `pprof`, analyze the performance bottleneck (both the framework and your own code).
+* (30%) Have a document to describe your idea and record the process of performance optimization (both the framework and your own code) with `pprof`.
 * (10%) Have a good code style.
-* (10%) Document your idea and code.
 
 NOTE: **go 1.12 is required**
 

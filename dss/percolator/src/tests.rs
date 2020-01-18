@@ -45,6 +45,7 @@ fn init_logger() {
 
 fn init(num_clinet: usize) -> (Network, Vec<Client>, Arc<CommitHooks>) {
     init_logger();
+
     let mut clients = vec![];
     let rn = Network::new();
     let tso_server_name = "tso_server";
@@ -111,7 +112,7 @@ fn test_get_timestamp_under_unreliable_network() {
     rn.enable("tso2", true);
 
     for child in children {
-        let _ = child.join().unwrap();
+        child.join().unwrap();
     }
 }
 
